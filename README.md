@@ -1,4 +1,5 @@
-# golang tools清单
+# 离线安装vscode中使用的golang tools
+## golang tools清单
 go-outline
 go-symbols
 gocode
@@ -19,7 +20,7 @@ gorename
 goimports
 guru
 
-# 下载golang tools
+## 下载golang tools
 
 ```shell
 cd $GOPATH/src
@@ -125,7 +126,7 @@ git clone https://github.com/golang/net.git
 
 ```
 
-# 安装golang tools
+## 安装golang tools
 ```shell
 
 cd $GOPATH/src
