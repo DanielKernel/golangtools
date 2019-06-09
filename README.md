@@ -71,31 +71,33 @@ cd $GOPATH/src/github.com/josharian
 git clone https://github.com/josharian/impl
 
 cd $GOPATH/src/github.com
+mkdir skratchdot
+cd $GOPATH/src/github.com/skratchdot
+git clone https://github.com/skratchdot/open-golang.git
+
+cd $GOPATH/src/github.com
 mkdir haya14busa
 cd $GOPATH/src/github.com/haya14busa
-mkdir goplay
-cd $GOPATH/src/github.com/haya14busa/goplay
-mkdir cmd
-cd $GOPATH/src/github.com/haya14busa/goplay/cmd
-git clone https://github.com/haya14busa/goplay/cmd/goplay
+git clone https://github.com/haya14busa/goplay.git
+
+cd $GOPATH/src/github.com
+mkdir karrick
+cd $GOPATH/src/github.com/karrick
+git clone https://github.com/karrick/godirwalk.git
+cd $GOPATH/src/github.com
+mkdir pkg
+cd $GOPATH/src/github.com/pkg
+git clone https://github.com/pkg/errors.git
 
 cd $GOPATH/src/github.com
 mkdir uudashr
 cd $GOPATH/src/github.com/uudashr
-mkdir gopkgs
-cd $GOPATH/src/github.com/uudashr/gopkgs
-mkdir cmd
-cd $GOPATH/src/github.com/uudashr/gopkgs/cmd
-git clone https://github.com/uudashr/gopkgs/cmd/gopkgs
+git clone https://github.com/uudashr/gopkgs.git
 
 cd $GOPATH/src/github.com
 mkdir davidrjenni
 cd $GOPATH/src/github.com/davidrjenni
-mkdir reftools
-cd $GOPATH/src/github.com/davidrjenni/reftools
-mkdir cmd
-cd $GOPATH/src/github.com/davidrjenni/reftools/cmd
-git clone https://github.com/davidrjenni/reftools/cmd/fillstruct
+git clone https://github.com/davidrjenni/reftools.git
 
 cd $GOPATH/src/github.com
 mkdir alecthomas
@@ -103,9 +105,9 @@ cd $GOPATH/src/github.com/alecthomas
 git clone https://github.com/alecthomas/gometalinter
 
 cd $GOPATH/src/github.com
-mkdir golang
-cd $GOPATH/src/github.com/golang
-git clone https://github.com/golang/lint.git
+mkdir go-delve
+cd $GOPATH/src/github.com/go-delve
+git clone https://github.com/go-delve/delve.git
 
 cd $GOPATH/src
 mkdir golang.org
@@ -115,6 +117,11 @@ cd $GOPATH/src/golang.org/x
 mkdir $GOPATH/src/golang.org/x/tools
 cd $GOPATH/src/golang.org/x/tools
 git clone https://github.com/golang/tools.git
+
+cd $GOPATH/src/golang.org/x
+git clone https://github.com/golang/lint.git
+cd $GOPATH/src/golang.org/x
+git clone https://github.com/golang/net.git
 
 ```
 
@@ -127,7 +134,6 @@ go install github.com/acroca/go-symbols
 go install github.com/mdempsky/gocode
 go install github.com/rogpeppe/godef
 go install github.com/zmb3/gogetdoc
-go install github.com/golang/lint
 go install github.com/fatih/gomodifytags
 go install github.com/sqs/goreturns
 go install github.com/cweill/gotests
@@ -136,10 +142,13 @@ go install github.com/haya14busa/goplay/cmd/goplay
 go install github.com/uudashr/gopkgs/cmd/gopkgs
 go install github.com/davidrjenni/reftools/cmd/fillstruct
 go install github.com/alecthomas/gometalinter
+go install github.com/go-delve/delve/cmd/dlv
 
+cd $GOPATH/src
 go install golang.org/x/tools/cmd/godoc
 go install golang.org/x/tools/cmd/gorename
 go install golang.org/x/tools/cmd/goimports
 go install golang.org/x/tools/cmd/guru
+go install golang.org/x/lint/golint
 
 ```
