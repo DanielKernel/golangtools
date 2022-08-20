@@ -1,0 +1,12 @@
+gollvm可以构建成功的commits：
+
+gollvm commit:  0e34e09fc15cde73f1b9974f2a657360abb94b4f
+libbacktrace commit:  2446c66076480ce07a6bd868badcbceb3eeecc2e
+libffi commit:  ab1677106605aba1c27665964ff90bea59612ce3
+gofrontend commit 7f33baa09a8172bb2c5f1ca0435d9efe3e194c9b
+llvm-project commit 09629215c272f09e3ebde6cc7eac9625d28910ff
+
+参考链接：https://groups.google.com/g/golang-nuts/c/sTh5tpz7ork/m/yQWQTX1zAAAJ
+
+需要执行以下命令获取对应的commit快照代码
+`git checkout commit-ID`
