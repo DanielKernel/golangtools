@@ -1,4 +1,4 @@
-gollvm可以构建成功的commits：
+一、gollvm可以构建成功的commits：
 
 gollvm commit:  0e34e09fc15cde73f1b9974f2a657360abb94b4f
 libbacktrace commit:  2446c66076480ce07a6bd868badcbceb3eeecc2e
@@ -10,3 +10,14 @@ llvm-project commit 09629215c272f09e3ebde6cc7eac9625d28910ff
 
 需要执行以下命令获取对应的commit快照代码
 `git checkout commit-ID`
+
+二、针对MacOS，需要确保SHELL环境变量指向 `/usr/bin/bash`
+参考：https://github.com/golang/go/issues/36554
+否则会有类似错误
+`/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:162: no such file or directory:  callee.go imports.go map.go methodsetcache.go ui.go
+/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:172: no such file or directory:  callee.go imports.go map.go methodsetcache.go ui.go
+/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:162: no such file or directory:  analysis.go
+/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:172: no such file or directory:  analysis.go
+/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:162: no such file or directory:  input.go matcher.go symbol.go
+/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:172: no such file or directory:  input.go matcher.go symbol.go
+/Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:162: no such file or directory:  common.go enabled_go117.go enabled_go118.go normalize.go termlist.go typeparams_go117.go typeparams_go118.go typeterm.go`
