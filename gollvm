@@ -21,3 +21,6 @@ llvm-project commit 09629215c272f09e3ebde6cc7eac9625d28910ff
 /Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:162: no such file or directory:  input.go matcher.go symbol.go
 /Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:172: no such file or directory:  input.go matcher.go symbol.go
 /Users/daniel/llvmProjects/llvm-project/llvm/tools/gollvm/gofrontend/libgo/match.sh:162: no such file or directory:  common.go enabled_go117.go enabled_go118.go normalize.go termlist.go typeparams_go117.go typeparams_go118.go typeterm.go`
+
+三、MACOS的目标系统市x86，不是x86_64
+cmake中增加`-DLLVM_TARGETS_TO_BUILD=X86`
