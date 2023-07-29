@@ -1,3 +1,4 @@
-1、启动clash
+## 1、启动clash
 clash -d /usr/local/etc/clash &
-2、打开网络代理
+
+## 2、打开网络代理
