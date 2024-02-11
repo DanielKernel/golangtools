@@ -7,10 +7,18 @@ ubuntu20.04黑屏系统进不去,光标闪烁
 
 # 解决方法
 1.终端输入：
+
 ubuntu-drivers devices
+
 查看自己的是否是nvidia的显卡驱动，最后有个recommended的就是推荐的安装
+
 2.如果安装推荐版本直接：
+
 sudo ubuntu-drivers autoinstall
+
 无需进行任何设置 ，安装完成后sudo reboot
+
 3.重启后，输入这个查看是否安装成功了
+
 nvidia-smi
+
